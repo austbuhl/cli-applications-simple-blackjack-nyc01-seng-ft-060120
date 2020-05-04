@@ -36,7 +36,7 @@ def hit?(card_total)
   while input != 'h' && input != 's'
     invalid_command
     prompt_user
-    get_user_input
+    input = get_user_input
   end
   if input == 'h'
     card_total += deal_card
